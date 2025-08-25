@@ -4,6 +4,17 @@
 
 Ce challenge nous amène à analyser une capture réseau, extraire des données cachées, et exploiter une plateforme web pour obtenir un accès root et récupérer le flag.
 
+## Fichiers fournis
+De base un dossier zippé protégé par mot de passe et dont j'ai found le passe avec John the ripper. et voici le contenu : 
+
+- `ExFilTr4T1oN.pcap` - Capture réseau contenant des données exfiltrées
+- `Get your free ticket !.pdf` - Description du challenge
+
+## Objectif
+
+Accéder au fichier `/root/r00t.txt` sur la plateforme web cible et récupérer le flag.
+
+
 ## Étape 1 : Analyse de la capture réseau
 
 La première étape consiste à analyser le fichier `ExFilTr4T1oN.pcap`. Cette capture contient des données exfiltrées qui nous permettront de découvrir les informations nécessaires pour la suite.
