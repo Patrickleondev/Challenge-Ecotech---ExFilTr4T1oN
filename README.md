@@ -6,9 +6,10 @@ Ce challenge de type CTF (Capture The Flag) implique l'analyse d'une capture ré
 
 ## Contexte personnel
 
-J'ai eu l'opportunité de participer à ce challenge grâce à Charles qui m'a invité. Malgré la pression de la journée, cette expérience m'a permis d'apprendre énormément sur les techniques d'exploitation web, l'analyse de captures réseau, et le reverse engineering de binaires. C'était un excellent exercice pratique qui a renforcé mes compétences en sécurité informatique.
+J'ai eu l'opportunité de participer à ce challenge grâce à M. Charles qui m'a invité. cette expérience m'a permis d'apprendre énormément sur les techniques d'exploitation web, l'analyse de captures réseau, et le reverse engineering de binaires. C'était un excellent exercice pratique 
 
 ## Fichiers fournis
+De base un dossier zippé protégé par mot de passe et dont j'ai found le passe avec John the ripper. et voici le contenu : 
 
 - `ExFilTr4T1oN.pcap` - Capture réseau contenant des données exfiltrées
 - `Get your free ticket !.pdf` - Description du challenge
