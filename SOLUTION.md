@@ -21,6 +21,8 @@ Le script `extract_png_from_pcap.py` a été créé pour reconstruire l'image PN
 
 L'exécution de ce script produit `challenge_message.png`, qui contient les informations cruciales pour la suite du challenge.
 
+<img width="1086" height="421" alt="image" src="https://github.com/user-attachments/assets/13a0f023-3184-4726-9533-f9a20ebfe6fa" />
+
 ## Étape 3 : Analyse de l'image extraite
 
 L'image `challenge_message.png` contient le message suivant :
@@ -81,6 +83,8 @@ Le binaire extrait (16544 bytes) est analysé avec IDA Pro pour comprendre sa lo
 
 ## Étape 9 : Reverse engineering avec IDA Pro
 
+<img width="1080" height="607" alt="image" src="https://github.com/user-attachments/assets/bf08a8b6-2f48-41b0-83c9-a0b9d842f34c" />
+
 L'analyse du binaire révèle sa logique :
 
 ```c
@@ -124,29 +128,3 @@ Cette commande, exécutée via la command injection, retourne le contenu du fich
 oozons{V0us_4v3Z_GagNe_UN_7ickeT_GR47UIT_RRRENdez_v0uS_p0UR_L3_EcoTECH_PARTYYYYYY_L3_06_08_2025}
 ```
 
-## Techniques utilisées
-
-1. **Analyse de capture réseau** : Extraction de données exfiltrées
-2. **Reconstruction de fichiers** : Réparation d'images PNG corrompues
-3. **Énumération web** : Découverte de vulnérabilités LFI
-4. **Command injection** : Exploitation via upload de fichiers
-5. **Privilege escalation** : Analyse et exploitation de binaires SUID
-6. **Reverse engineering** : Décompilation et analyse de binaires
-7. **Exploitation de binaires** : Utilisation de la logique découverte
-
-## Conclusion et apprentissage
-
-Ce challenge démontre l'importance d'une approche méthodique combinant analyse de données, énumération web, exploitation de vulnérabilités et reverse engineering pour atteindre l'objectif final.
-
-### Apprentissage personnel
-
-Cette expérience m'a permis d'apprendre énormément sur plusieurs aspects de la sécurité informatique :
-
-- **Analyse de captures réseau** : J'ai découvert comment extraire et reconstruire des données à partir de captures PCAP
-- **Exploitation web** : J'ai mis en pratique les techniques de command injection et d'énumération
-- **Reverse engineering** : L'utilisation d'IDA Pro pour analyser le binaire SUID a été très instructive
-- **Méthodologie** : J'ai appris l'importance d'une approche structurée et de la documentation de chaque étape
-
-### Remerciements
-
-Un grand merci à Charles pour m'avoir invité à participer à ce challenge. Malgré la pression de la journée, cette expérience a été très enrichissante et m'a permis de mettre en pratique mes connaissances dans un contexte réaliste. Cette opportunité m'a donné confiance en mes capacités et m'a motivé à continuer à apprendre dans le domaine de la cybersécurité.
