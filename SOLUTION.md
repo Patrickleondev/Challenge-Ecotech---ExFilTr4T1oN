@@ -44,6 +44,8 @@ Cette information nous donne :
 
 ## Étape 4 : Énumération de la plateforme web
 
+<img width="1811" height="940" alt="image" src="https://github.com/user-attachments/assets/651293d2-444e-485b-b3c6-f14043f27753" />
+
 L'accès à `http://54.174.169.185:3000/` révèle une application web avec plusieurs pages :
 - Page d'accueil
 - Page d'upload de fichiers
@@ -58,6 +60,7 @@ L'analyse de la fonctionnalité d'upload révèle une vulnérabilité critique :
 Cette découverte est cruciale car elle nous permet d'exécuter des commandes arbitraires sur le serveur avec les privilèges de l'utilisateur web.
 
 ## Étape 6 : Énumération du système
+<img width="1061" height="782" alt="image" src="https://github.com/user-attachments/assets/5b94df40-1725-44e5-bd85-1398c0a920da" />
 
 Via la command injection, on découvre :
 - L'utilisateur actuel : `appuser` (uid=999)
@@ -66,6 +69,7 @@ Via la command injection, on découvre :
 - La présence de binaires SUID dans `/app` : `gunzip` et `less`
 
 ## Étape 7 : Découverte du binaire SUID ecotech
+<img width="713" height="221" alt="image" src="https://github.com/user-attachments/assets/3f985332-770c-43c3-8345-79361bcc58e8" />
 
 La recherche de fichiers SUID révèle un binaire particulièrement intéressant : `/usr/bin/ecotech`. Ce binaire a un nom suspect et des permissions SUID, ce qui en fait une cible privilégiée pour l'élévation de privilèges.
 
@@ -78,8 +82,9 @@ Pour comprendre le fonctionnement du binaire, on l'extrait du système via la co
 ```bash
 base64 /usr/bin/ecotech
 ```
+<img width="980" height="469" alt="image" src="https://github.com/user-attachments/assets/aba9d581-f6cd-4195-8984-99e2f7d5d173" />
 
-Le binaire extrait (16544 bytes) est analysé avec IDA Pro pour comprendre sa logique interne.
+Le binaire extrait (16544 bytes) est analysé avec IDA freeware pour comprendre sa logique interne.
 
 ## Étape 9 : Reverse engineering avec IDA Pro
 
