@@ -86,7 +86,7 @@ base64 /usr/bin/ecotech
 
 Le binaire extrait (16544 bytes) est analysé avec IDA freeware pour comprendre sa logique interne.
 
-## Étape 9 : Reverse engineering avec IDA Pro
+## Étape 9 : Reverse engineering avec IDA 
 
 <img width="1080" height="607" alt="image" src="https://github.com/user-attachments/assets/bf08a8b6-2f48-41b0-83c9-a0b9d842f34c" />
 
